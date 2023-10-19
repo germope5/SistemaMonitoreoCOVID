@@ -1,0 +1,16 @@
+/*La línea es una configuración en formato JSON utilizada en herramientas de desarrollo web,
+ especialmente en el contexto de aplicaciones que utilizan React, una biblioteca de JavaScript para la construcción
+  de interfaces de usuario interactivas. Esta configuración se utiliza con Babel, una herramienta que permite a los 
+  desarrolladores escribir código JavaScript moderno y convertirlo en una forma que sea compatible con navegadores y 
+  entornos más antiguos. */
+
+{"presets": [
+    /*Este preset permite compilar el código JavaScript para que sea compatible con los navegadores y entornos específicos
+    en los que se ejecutará la aplicación. Analiza las características utilizadas en el código y aplica las transformaciones
+    necesarias para que funcionen en versiones antiguas de navegadores y entornos que no admiten las características más modernas de JavaScript. */
+    "@babel/preset-env",
+    /*Este preset está diseñado específicamente para proyectos que utilizan React. Proporciona las transformaciones necesarias
+    para que el código JSX (JavaScript XML) utilizado en React sea entendido y ejecutado correctamente por los navegadores. */
+    "@babel/preset-react"
+    ]
+}

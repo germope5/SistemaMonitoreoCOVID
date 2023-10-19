@@ -1,0 +1,835 @@
+.navbar {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  background-color: #003856;
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  overflow: hidden; /* Para crear una máscara circular alrededor de los enlaces */
+}
+
+.barraBusqueda {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px; /* Espacio inferior entre la barra de búsqueda y la tabla */
+  cursor: text;
+  float: right;
+  padding: 0 14px 0 0;
+}
+
+.barraBusqueda input {
+  cursor: text; /* Cambiar el cursor a texto cuando está sobre la barra de búsqueda */
+}
+
+.textField {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #003856;
+  color: rgb(0, 237, 100);
+  cursor: text;
+  height: 32px;
+  width: 250px;
+  border: 1px solid rgb(0, 237, 100);
+  padding: 0 0 0 12px;
+}
+
+.textField:hover {
+  cursor: text;
+}
+
+/* Cambiar el color del placeholder */
+.textField::placeholder {
+  /* Color deseado para el placeholder */
+  color: rgba(255, 255, 255, 0.699); 
+}
+
+.btnBuscar {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: rgba(30, 207, 39, 0.8);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnBuscar:hover {
+  background-color: rgba(30, 207, 39, 0.568); /* Cambiar color en hover */
+}
+
+/* Estilos para el icono */
+.btnBuscar svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px; /* Espacio entre el icono y el texto del botón */
+}
+
+.nav-row {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  margin-bottom: 10px; /* Espacio entre las filas */
+}
+
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: #003856;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+  align-items: center; /* Centra verticalmente los elementos */
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links .animation {
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  z-index: 0;
+  background: #18ac28;
+  border-radius: 8px;
+  transition: all .4s ease 0s;
+}
+
+.nav-links li {
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 10px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  color: white;
+  width: "200px";
+  height: "125px";
+}
+
+
+
+.nav-links li a {
+  display: inline-block;
+  text-decoration: none; /* Quita el subrayado */
+  color: white;
+  width: "50px";
+  height: "125px";
+}
+
+.nav-links li:nth-child(1) {
+  width: 200px;
+
+}
+
+.nav-links .start-home, li:nth-child(1):hover~.animation {
+  width: 200px;
+  left: 0;
+}
+
+.nav-links li:not(.start-home):hover~.animation {
+  width: 200px;
+  left: 0;
+}
+
+.nav-links li:nth-child(2) {
+  width: 200px; /* Ajusta el ancho del segundo elemento */
+
+}
+
+.nav-links li:nth-child(2):hover~.animation {
+  width: 200px;
+  left: 200px; /* Ajusta la posición izquierda del segundo elemento */
+}
+
+.nav-links li:nth-child(3) {
+  width: 200px; /* Ajusta el ancho del tercer elemento */
+
+}
+
+.nav-links li:nth-child(3):hover~.animation {
+  width: 200px;
+  left: 400px; /* Ajusta la posición izquierda del tercer elemento */
+}
+
+.nav-links li:nth-child(4) {
+  width: 200px; /* Ajusta el ancho del cuarto elemento */
+
+}
+
+.nav-links li:nth-child(4):hover~.animation {
+  width: 200px;
+  left: 600px; /* Ajusta la posición izquierda del cuarto elemento */
+}
+
+
+
+
+.link-title {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 5px; /* Agrega espacio superior entre la imagen y el título */
+  color: white; /* Color del texto */
+  font-weight:bold; /* Puedes ajustar el peso de la fuente según tus preferencias */
+  white-space: nowrap; /* Evita que el texto del tooltip se divida en varias líneas */
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+  align-items: center; /* Centra verticalmente los elementos */
+  
+}
+
+.content-Acercade {
+  color:white;
+
+}
+
+.image-footer {
+  text-align: center;
+  font-size: 14px;
+  color: #666; /* Color del texto del pie de página */
+  margin-top: 10px; /* Espacio superior del pie de página */
+}
+
+.content-Conjuntodatos {
+  color: white;
+}
+
+.content-Modeladotopicos {
+  color: white;
+}
+
+/* Títulos para las páginas del menú de navegación*/
+.bg-title {
+  background-color: rgb(24, 172, 40,1.5); /* Reemplaza "tu-color-aqui" con el color deseado */
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: '12px';
+  margin: 0 0 28px 0;
+  color: white;
+}
+
+.bg-title-modelado {
+  background-color: rgb(24, 172, 40,1.5); /* Reemplaza "tu-color-aqui" con el color deseado */
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: '12px';
+  margin: 0 0 28px 0;
+  color: white;
+  
+}
+
+/* Estilos para el título principal */
+.bg-title-acercade {
+  background-color: rgb(24, 172, 40,1.5); /* Reemplaza "tu-color-aqui" con el color deseado */
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: '12px';
+  margin: 0 0 28px 0;
+  color: white;
+}
+
+/* Clase para la columna izquierda (imagen y nombre) */
+.left-column {
+  flex: 1; /* Toma el 50% del ancho de la tarjeta */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: green; /* Fondo verde para la columna izquierda */
+}
+
+/* Clase para la columna derecha (datos adicionales) */
+.right-column {
+  flex: 1; /* Toma el 50% del ancho de la tarjeta */
+  margin-left: 20px; /* Espacio entre las dos columnas */
+  background-color: rgb(24, 24, 24); /* Fondo negro para la columna derecha */
+}
+
+.creatorImage {
+  width: '160px'; /* Ancho de la imagen  */
+  height: '160px'; /* Alto de la imagen  */
+  box-shadow: 0 0 20px 1px rgb(24, 24, 24); /*sombra */
+}
+
+.imagenGit {
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.fade-in-card {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Clase para la tarjeta de presentación */
+.creator-card {
+  background: linear-gradient(to right, green 50%, rgb(24, 24, 24) 50%);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  width: 780px; /* Ancho de la tarjeta reducido */
+  margin: 0 auto; /* Centra horizontalmente la tarjeta */
+
+}
+
+/* Estilos para el contenido del proyecto */
+.project-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify; 
+  justify-content: center;
+}
+
+/* Estilos para las secciones */
+.project-section {
+  margin-bottom: 30px;
+  text-align: justify; 
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+}
+
+/* Estilos para los títulos de sección */
+.project-section h2 {
+  color: #007BFF;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los títulos de objetivos específicos */
+.project-section h3 {
+  color: #0056b3;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los párrafos */
+.project-section p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Estilos para la lista de objetivos específicos */
+.project-section ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los elementos de la lista de objetivos específicos */
+.project-section li {
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+
+
+/* Estilos para el pie de página debajo de las imágenes */
+.image-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.CustomDataTable {
+  text-align: center;
+}
+
+.bg-title-table {
+  background-color: rgba(30, 207, 39, 0.8); /* Reemplaza "tu-color-aqui" con el color deseado */
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: '12px';
+  margin: 0 0 28px 0;
+  color: white;
+  /* Otros estilos opcionales, como color de texto, espaciado, etc. */
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+    /* Estilos para el menú desplegable de la colección */
+.select-collection {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Agrega un margen entre los dos menús desplegables */
+  color: rgb(0, 237, 100);
+  background-color: #003856;
+  border-color: rgb(0, 237, 100);
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+/* Estilos para el menú desplegable de la página */
+.select-page {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: rgb(0, 237, 100);
+  background-color: #003856;
+  border-color: rgb(0, 237, 100);
+}
+
+.filtro1 label {
+  color:black;
+}
+
+.filtro2 label {
+  color: black;
+}
+
+.filtro3 label {
+  color: black;
+}
+
+.filtro4 label {
+  color: black;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #003856;;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+  max-width: 600px; /* Limita el ancho de las columnas */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+
+}
+
+.footer p {
+  margin: 0 0 10px;
+}
+
+.social-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.favicon-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.social-links li {
+  margin-right: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  padding: 0 20px;
+}
+
+.footer-links a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Agregar estilos personalizados para los gráficos */
+.chart-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.chart-column {
+  flex: 1;
+  padding: 10px;
+  background-color: beige;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: '297px';
+  width: '594px';
+}
+
+.chart-container {
+  background-color: beige;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* height: '382px'; */
+}
+
+.texto-grafico {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.chart-separator {
+  border: none;
+  height: 2px;
+  background-color: #242424;
+  border-top: 1px solid #ccc;
+  margin: 40px 0;
+}
+.lines-chart-container {
+  background-color: beige;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lines-chart-container h2 {
+  color:#282c34;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chart-title {
+  margin: 20px 0;
+}
+
+.period-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.period-selector label {
+  color: black;
+} 
+
+.chart-wrapper {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.chart-wrapper2 {
+  margin: 0 auto;
+  align-items: center;
+  height: '382px';
+}
+
+/* Estilos para el contenedor de búsqueda */
+.search-container {
+  position: relative;
+  width: 300px; /* Ajusta el ancho según tus preferencias */
+}
+
+/* Estilos para la entrada de búsqueda */
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para la lista de opciones */
+.search-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  list-style-type: none; /* Elimina las viñetas (puntos) de la lista */
+}
+
+/* Estilos para cada opción de la lista */
+.search-options li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  list-style-type: none; /* Elimina las viñetas (puntos) de la lista */
+}
+
+/* Estilos para cada opción al pasar el mouse por encima */
+.search-options li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilos para el contenedor del componente */
+.search-period-container {
+  position: relative;
+  width: 300px; /* Ajusta el ancho según tus preferencias */
+}
+
+/* Estilos para la entrada de búsqueda */
+.react-autosuggest__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style-type: none; /* Elimina las viñetas (puntos) de la lista */
+}
+
+/* Estilos para la lista de sugerencias */
+.react-autosuggest__suggestions-container {
+  position: absolute;
+  top: 100%;
+  left: 0; /* Alinea la lista a la izquierda */
+  width: 100%;
+  margin-top: 5px;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Asegura que la lista esté en la parte superior */
+}
+/* Estilos para cada sugerencia */
+.react-autosuggest__suggestion {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  list-style-type: none;
+  text-align: left;
+  position: relative;
+  background-color: #f2f2f2; /* Colorea todo el fondo de la sugerencia */
+}
+
+/* Estilos para cada sugerencia al pasar el mouse por encima */
+.react-autosuggest__suggestion--highlighted {
+  background-color: rgb(172, 241, 154);
+  list-style-type: none; /* Elimina las viñetas (puntos) de la lista */
+  text-align: left;
+}
+
+
+.topic-explorer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  color:white;
+  cursor: pointer;
+}
+
+.months-list,
+.topics-list,
+.topic-words {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.selectedTopic {
+  background-color: rgba(30, 207, 39, 0.8);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ulTopicos {
+  list-style: none;
+  padding: 0;
+}
+
+.ulTopicos li:hover {
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.topic-words {
+  flex-grow: 1;
+}
+
+.topic-words h2 {
+  margin-top: 0;
+}
+
+/* Cambia los estilos del botón para que sean más atractivos */
+button {
+  background-color: rgba(30, 207, 39, 0.8);
+  color: white;
+  border: 0.5;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s; /* Transiciones para fondo y borde */
+}
+
+/* Estilos para el botón al pasar el puntero */
+button:hover {
+  background-color: #0073e6; /* Cambia el color de fondo */
+  border: 1px solid white; /* Agrega borde blanco */
+  font-weight: bold; /* Puedes agregar negrita u otros estilos de fuente */
+}
+
+/* En App.css o tu archivo de estilos */
+.selected-button {
+  background-color: #0073e6; /* Cambia el color de fondo al seleccionar */
+  color: #fff; /* Cambia el color del texto al seleccionar */
+  font-weight: bold; /* Puedes agregar negrita u otros estilos de fuente */
+}
+
+
+/* Centra el componente en pantalla */
+.TopicsVisualization {
+  text-align: center;
+}
+
+/* Estilos para el contenedor del gráfico */
+.visualization-container {
+  display: inline-block;
+  /* text-align: center; */
+  margin: 0 auto;
+  /* height: 1200px; */
+
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: center;
+}
+
+
+/* Estilos para los círculos */
+.circle {
+  fill: rgba(24, 172, 40, 1.5);
+  stroke: white;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Transiciones para radio y color */
+}
+
+
+/* Animación de cambiar el color al pasar el puntero */
+.circle:hover {
+  fill: rgb(0, 115, 230);
+  stroke-width: 5;
+  font-size: 16px; /* Tamaño de fuente aumentado */
+  font-weight: bold; /* Fuente en negritas */
+}
+
+
+.circle-label {
+  fill: white;
+  font-size: 14px;
+  font-weight: normal; /* Peso de fuente normal por defecto */
+  text-anchor: middle;
+  -o-table-baseline: middle;
+  pointer-events: none; /* Evita que el texto capture eventos de clic */
+}
+
+.bubble-chart {
+  width: 800px;
+  height: 600px;
+}
+
+.bar-chart {
+  width: 800px;
+  height: 600px;
+}
+
+/* Estilos para el contenido del proyecto */
+.Presentacion_text {
+  max-width: 85%;
+  margin: 0 auto; 
+  /* padding: 20px; */
+  text-align: justify; 
+  justify-content:left;
+}
+
+

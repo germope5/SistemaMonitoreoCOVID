@@ -1,0 +1,18 @@
+{
+  /*En esta línea, se está estableciendo que esta configuración "extiende" otra configuración
+  llamada "development". Esto sugiere que se está basando en las reglas y configuraciones previamente
+  definidas en el archivo de configuración denominado "development". Esto es común en las configuraciones
+   de herramientas como ESLint, donde se pueden definir ajustes generales y luego extender o personalizar
+    para diferentes entornos, como desarrollo y producción. */
+  "extends": [
+    "development"
+  ],
+  /*En esta parte, se está proporcionando un objeto llamado "hints" que tiene una clave "create-element-svg"
+  con el valor "off". Esto indica que se está controlando algún tipo de "hint" o sugerencia relacionada
+  con la creación de elementos SVG (Scalable Vector Graphics) en el código. Establecer el valor en "off"
+   sugiere que se está desactivando esta sugerencia en particular, lo que significa que no se mostrarán advertencias
+    o sugerencias en el linter o la herramienta de análisis estático en relación con la creación de elementos SVG. */
+  "hints": {
+    "create-element-svg": "off"
+  }
+}

@@ -1,0 +1,79 @@
+Cambia los estilos del botón para que sean más atractivos
+button {
+    background-color: rgba(30, 207, 39, 0.8);
+    color: white;
+    border: 0.5;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s; /* Transiciones para fondo y borde */
+  }
+
+  /* Estilos para el botón al pasar el puntero */
+button:hover {
+    background-color: #0073e6; /* Cambia el color de fondo */
+    border: 1px solid white; /* Agrega borde blanco */
+    font-weight: bold; /* Puedes agregar negrita u otros estilos de fuente */
+  }
+  
+  /* Centra el componente en pantalla */
+  .TopicsVisualization {
+    text-align: center;
+  }
+  
+  /* Estilos para el contenedor del gráfico */
+  .visualization-container {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    /* height: 700px; */
+  }
+
+  svg {
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+  }
+  
+  
+  /* Estilos para los círculos */
+  .circle {
+    fill: rgba(24, 172, 40, 1.5);
+    stroke: white;
+    stroke-width: 2;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* Transiciones para radio y color */
+  }
+  
+  
+  /* Animación de cambiar el color al pasar el puntero */
+  .circle:hover {
+    fill: rgb(0, 115, 230);
+    stroke-width: 5;
+    font-size: 16px; /* Tamaño de fuente aumentado */
+    font-weight: bold; /* Fuente en negritas */
+  }
+
+
+  .circle-label {
+    fill: white;
+    font-size: 14px;
+    font-weight: normal; /* Peso de fuente normal por defecto */
+    text-anchor: middle;
+    -o-table-baseline: middle;
+    pointer-events: none; /* Evita que el texto capture eventos de clic */
+  }
+
+  .bubble-chart {
+    width: 800px;
+    height: 600px;
+  }
+  
+  .bar-chart {
+    width: 800px;
+    height: 600px;
+  }
+  
+
+
+  

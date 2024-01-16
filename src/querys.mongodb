@@ -1,0 +1,10 @@
+// En este código se realizan consultas a la base de datos.
+//Archivo: query.mongodb
+use('Covid');
+
+// Buscar documentos con fecha "May 01" en la colección "Mayo_2020"
+db.getCollection('Mayo_2020').find({
+  fecha: {
+    $regex: 'May 02'
+  }
+})

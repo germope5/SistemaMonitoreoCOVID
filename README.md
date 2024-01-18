@@ -19,6 +19,9 @@ Antes de comenzar con la instalación y ejecución del proyecto, asegúrate de t
 
 - **D3.js:** Se requiere de las librerías de este Framework para la visualización de los Gráficos. [d3js.org](https://d3js.org/).
 
+# Diagrama de Despliegue de la Arquitectura de Software
+
+
 ## Inicializar el Servidor de MongoDB
 
 ```

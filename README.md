@@ -22,6 +22,14 @@ Antes de comenzar con la instalación y ejecución del proyecto, asegúrate de t
 # Diagrama de Despliegue de la Arquitectura de Software
  ![Diagrama de Despliegue](/src/public/Imagen1.png)
 
+## Más Capturas de Pantalla del Sistena
+![Imagen 2](/src/public/Imagen2.png)
+![Imagen3](/src/public/Imagen3.png)
+![Imagen 4](/src/public/Imagen4.png)
+![Imagen 5](/src/public/Imagen5.png)
+![Imagen 6](/src/public/Imagen6.png)
+![Imagen 7](/src/public/Imagen7.png)
+
 ## Inicializar el Servidor de MongoDB
 
 ```

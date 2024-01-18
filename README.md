@@ -23,11 +23,17 @@ Antes de comenzar con la instalación y ejecución del proyecto, asegúrate de t
  ![Diagrama de Despliegue](/src/public/Imagen1.png)
 
 ## Más Capturas de Pantalla del Sistena
+- Encabezado del Sistema
 ![Imagen 2](/src/public/Imagen2.png)
+- Pie de Página del Sistema
 ![Imagen3](/src/public/Imagen3.png)
+- Página principal del Sistema de Monitoreo
 ![Imagen 4](/src/public/Imagen4.png)
+- Sección del Descubrimiento de Tópicos
 ![Imagen 5](/src/public/Imagen5.png)
+- Sección del Dataset del Sistema
 ![Imagen 6](/src/public/Imagen6.png)
+- Sección del Contacto o Acerca del Proyecto
 ![Imagen 7](/src/public/Imagen7.png)
 
 ## Inicializar el Servidor de MongoDB

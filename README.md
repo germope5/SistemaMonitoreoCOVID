@@ -20,7 +20,7 @@ Antes de comenzar con la instalación y ejecución del proyecto, asegúrate de t
 - **D3.js:** Se requiere de las librerías de este Framework para la visualización de los Gráficos. [d3js.org](https://d3js.org/).
 
 # Diagrama de Despliegue de la Arquitectura de Software
-- ![Diagrama de Despliegue](SistemaMonitoreoCOVID/src/public/Imagen1.png)
+- ![Diagrama de Despliegue](/src/public/Imagen1.png)
 
 ## Inicializar el Servidor de MongoDB
 
